@@ -1,0 +1,174 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wh {
+    color: white;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 60rem;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(autofit, minmax (250px, 1fr));
+}
+
+.invite {
+    background: white;
+    grid-column: 1 / 4;
+    padding-top: 3.5rem;
+    padding: 4rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1.2rem;
+    
+}
+
+.sub-heading {
+    font-size: 1.68rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+}
+
+.main-paragraph {
+    max-width: 50rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(218, 22%, 67%);
+    opacity: 70%;
+    text-align: left;
+}
+
+.price {
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 .5rem;
+    padding: 4rem;
+
+}
+
+.sub {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+.duration {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.price span {
+    position: absolute;
+    left: 7rem;
+    bottom: 12px;
+    font-size: 1.3rem;
+    font-size: 700;
+    opacity: 50%;
+}
+
+.access {
+    font-size: 1.4rem;
+    font-weight: 700;
+    opacity: 80%;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 22.5rem;
+    background: hsl(71, 73%, 54%);
+    color: white; 
+    border-radius: .5rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    box-shadow: 5px 2px 8px 1px hsl(218, 22%, 67%);
+    border-style: none;
+
+}
+
+.about {
+    border-radius: 0 0 .8rem 0;
+    background: hsl(179, 62%, 43%);
+    opacity: 80%;
+    padding: 4rem 9rem 4rem 4rem;
+}
+
+.benefits {
+    text-align: left;
+}
+
+.benefits li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 20rem;
+    opacity: 80%;
+}
+
+.why {
+    font-size: 1.65rem;
+    margin-bottom: 1.8rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 30rem;
+        grid-template: repeat(3, 1fr) / repeat(autofit, minmax (250px, 1fr));
+        margin: 5rem auto;
+    }
+
+    .container > div {
+        padding: 2rem;
+    }
+    .invite {
+        padding-bottom: 3rem;
+        grid-column: 1 / 2;
+    }
+
+    .price {
+        border-radius: 0;
+    }
+    
+    .about {
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    .btn {
+        width: 25rem;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sub-heading {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .main-paragraph {
+        max-width: none;
+        font-size: 1.3rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+}
